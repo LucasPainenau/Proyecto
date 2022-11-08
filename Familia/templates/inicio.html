@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Familiar</title>
+</head>
+<body>
+    Bienvenido a la Web Familia
+
+    <table><tr><th>Nombre</th><th>Edad</th><th>Relacion</th><th>Ocupacion</th><th>Fecha de Nacimiento</th></tr>
+{% for o in objs %}
+
+<tr>
+    <td>{{o.nombre}}</td>
+    <td>{{o.edad}}</td>
+    <td>{{o.relacion}}</td>
+    <td>{{o.ocupacion}}</td>
+    <td>{{o.fechanac}}</td>
+</tr>
+
+{% endfor %}
+
+    </table>
+
+</body>
+</html>
